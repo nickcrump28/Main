@@ -140,7 +140,7 @@ Msgreq("[WARNING!!!]","This script contains flashing lights and colors.",5,"",""
 end
 wait(5)
 
-Msgreq("Creo FE SG","Would you still like to load?",9999,"Yes","No thanks").OnInvoke = function(result)
+Msgreq("SimplyAwoken FE SG","Would you still like to load?",9999,"Yes","No thanks").OnInvoke = function(result)
 	if result == "Yes" then
 		cont()
 
@@ -159,7 +159,7 @@ function cont()
 	local LoadHats = nil
 
 	if Count >= 6 then
-		Msgreq("Creo FE SG","You have enough hats to replicate wings, would you like to?",9999,"Yes","No thanks").OnInvoke = function(result)
+		Msgreq("SimplyAwoken FE SG","You have enough hats to replicate wings, would you like to?",9999,"Yes","No thanks").OnInvoke = function(result)
 			if result == "Yes" then
 				LoadHats = true
 
@@ -174,7 +174,7 @@ function cont()
 	repeat wait() until LoadHats == true or LoadHats == false
 
 
-	Msgreq("Creo FE SG","Anti-Lag Mode",9999,"Yes","No thanks").OnInvoke = function(result)
+	Msgreq("SimplyAwoken FE SG","Anti-Lag Mode",9999,"Yes","No thanks").OnInvoke = function(result)
 		if result == "Yes" then
 			AntiLag = true
 
